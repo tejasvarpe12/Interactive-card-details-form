@@ -1,0 +1,165 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.background img {
+    width: 100%;
+    height: auto;
+}
+
+.card-display {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    left: 20px;
+    width: 400px;
+    margin-left: 200px;
+}
+
+.card-front, .card-back {
+    background-size: cover;
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+    color: white;
+    padding: 20px;
+    position: relative;
+    width: 400px;
+
+}
+
+
+.card-front {
+    background-image: url("./images/bg-card-front.png");
+}
+
+.card-back {
+    background-image: url("./images/bg-card-back.png");
+    margin-left: 200px;
+}
+
+.card-logo {
+    width: 50px;
+    height: auto;
+}
+
+.card-number {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.name-date-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.card-cvv {
+    position: absolute;
+    bottom: 95px;
+    right: 50px;
+    font-size: 1em;
+}
+
+.form-container {
+    margin-left: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.date-cvv {
+    display: flex;
+    gap: 20px;
+}
+
+.date, .cvv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input:focus {
+    border-color: #4CAF50;
+}
+
+.attribution {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.875em;
+}
+
+.attribution a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#success-message {
+    text-align: center;
+}
+
+#success-message p {
+    font-size: 1.2em;
+    color: green;
+}
+
+#continue-button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#continue-button:hover {
+    background-color: #45a049;
+}
